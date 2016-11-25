@@ -1,10 +1,9 @@
 ---
 layout: post-no-feature
 title: "Mission Mathematics"
-description: "Finally deciding to overcome my fear of college level Mathematics, today I made a decsion to study Maths on my own." 
+description: "Finally deciding to overcome my fear of college level Maths, I have made a decision to finally put my head down and start studying by myself." 
 comments: true
 post_author: "Arogya Koirala"
-incomplete: "The following article is under development, and is placed in this website for testing purposes only"
 ---
 
 Day zero of Mathematics self study begins today. After spending the entire day fiddling with my new Shure SM-57, Zoom G3X and the PRS, I took some time in the evening looking for some useful books that'll re-introduce me to the subject. Some notes:
