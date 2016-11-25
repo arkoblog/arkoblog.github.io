@@ -13,8 +13,9 @@ Day zero of Mathematics self study begins today. After spending the entire day f
 * I have to strengthen my fundamentals, and for that, going through a precalculus book can be a good option. It'll also get me warmed up for tougher books. After all, I'd hate to get anxious after I struggle remembering how to integrate sin(x) in the middle of a difficult chapter. 
 * I also have to parallelly work with difficult books, those in Calculus and Analysis. It's like trying to build an interactive treemap in d3 at the same time when you're learning the basics of JavaScript. You're more likely to ask questions in the tough books, and find answers in the easy ones.
 
-Here's my tentative plan for tomorrow:
+Here is tomorrow's tentative plan:
+
 1. Go through Chapters 0 and 1 in Precalculus by Sheldon Axler 
 2. Go through the first two Videos in Single Variable Calculus available at MIT OCW
 3. Try my hands at Spivak and Terrence Tao - Analysis 1 (Lord have mercy!)
-4. Jazz Chords!
+4. Jazz Chords
