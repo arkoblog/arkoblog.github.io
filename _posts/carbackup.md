@@ -4,6 +4,8 @@ title: "A stitch in time"
 description: "Exploring the role of open data as a tool for accountability and transparency in the context of Nepal" 
 ---
 
+1610372643
+
 In recent years, transparency and public right to government information are starting to be seen as essential to democratic participation, public trust in government, and prevention of corruption [[^1]]. This is founded on the idea that availabilty of information places any country's citizens in a better position to actively analyse, question and even engage themselves in its decision making processes. 
 
 As a consequence, the world has witnessed a significant rise [[^2]] in efforts to improve openness in government actions. The launch of Data.gov - the US government's open data portal - back in 2009, is considered by many as an important milestone in this context. Simon Rogers, data journalist at The Guardian says:
