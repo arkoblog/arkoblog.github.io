@@ -1,7 +1,7 @@
 ---
 layout: post-no-feature
 title: "Mission Mathematics"
-description: "Finally deciding to overcome my fear of college level Maths, I have made a decision to finally put my head down and start studying by myself." 
+description: "Finally deciding to overcome my fear of college level Maths, I have made a decision to put my head down and start studying on my own." 
 comments: true
 post_author: "Arogya Koirala"
 ---
