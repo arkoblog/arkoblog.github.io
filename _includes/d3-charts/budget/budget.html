@@ -44,7 +44,7 @@ div.tooltip {
 
 </style>
 <svg width="700" height="600"></svg>
-<script src="/assets/js/d3.v4.min.js"></script>
+<script src="/assets/js/d3.v3.min.js"></script>
 <script>
 
 //parameters//
@@ -57,7 +57,7 @@ var div = d3.select("body").append("div")
     .attr("class", "tooltip")       
     .style("opacity", 0);
 
-d3.csv("/includes/d3-charts/budget/flaremini.csv", function(csv_data){
+d3.csv("/assets/data/budget.csv", function(csv_data){
   maindata=[]
   for (var k = 1, len = csv_data.length; k < len; k++) {
   console.log("CSV:"+JSON.stringify(csv_data[k]));
