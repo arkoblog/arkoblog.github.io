@@ -1,7 +1,6 @@
 ---
 layout: post-light-feature
-permalink: /about/index.html
-title: <!-- "About" -->
+permalink: /about/index.html 
 description: "Thank you for visiting my website." 
 tags: [about, Jekyll, theme, responsive]
 image: 
