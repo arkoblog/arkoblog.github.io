@@ -59,7 +59,7 @@ var div = d3.select("body").append("div")
     .attr("class", "tooltip")       
     .style("opacity", 0);
 
-d3.csv("flaremini.csv", function(csv_data){
+d3.csv("/includes/d3-charts/budget/flaremini.csv", function(csv_data){
   maindata=[]
   for (var k = 1, len = csv_data.length; k < len; k++) {
   console.log("CSV:"+JSON.stringify(csv_data[k]));
