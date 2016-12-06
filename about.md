@@ -1,18 +1,20 @@
 ---
-layout: post-no-feature
+layout: post-light-feature
 permalink: /about/index.html
 title: "About"
 description: "Arkoblog is a somewhat opinionated blog that rests at the intersection of data, technology and society." 
 tags: [about, Jekyll, theme, responsive]
+image: 
+        feature: about.png
 ---
 
-Thank you for visiting arkoblog.
+Thank you for visiting my website.
 
-My name is Arogya Koirala, and I am a data science professional who is passionate about statistics, computer programming, graphiic design and data visualization. In my free time, I enjoy playing the guitar and dabbling with technology (in fact, this blog, which is entirely powered by github, is a result of my efforts in understanding and using Jekyll, a super fast static site generator). I will be using this blog for the following:
+My name is Arogya Koirala, and I am a data science professional who is passionate about statistics, computer programming, graphic design and data visualization. 
 
-- Sharing interesting web development, and data visualization projects that I am currently working on,
-- Sharing my knowledge on the state of data and technology efforts in Nepal, and challenges around the same,
+In my free time, I enjoy making music, studying maths and dabbling with technology. In fact, this blog, which is entirely powered by github, is a result of my efforts in understanding and using Jekyll, a super fast static site generator. 
 
+I will be using this blog to talk abou any and all interests of mine, which may range from concepts in data visualization and graphic design to music production and travelling. 
 
 ### Contact me
 
