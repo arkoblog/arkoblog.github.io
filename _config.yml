@@ -1,7 +1,7 @@
 title:            ARKOBLOG
-tagline:          A blog that rests at the intersection of technology, media, and policy in Nepal.
-description:      A blog that rests at the intersection of technology, media, and policy in Nepal.
-canonical: http://thecloverleaf.github.io
+tagline:          A somewhat opinionated blog that rests at the intersection of data, technology and society.
+description:      A somewhat opinionated blog that rests at the intersection of data, technology and society.
+canonical: http://arkoblog.github.io
 
 # Owner/author information
 owner:
@@ -10,7 +10,7 @@ owner:
   bio:            "Aesthete & Athlete"
   email:          arogyakoirala@gmail.com
   twitter:        elemelon
-  github:         elemelon5
+  github:         arkoblog
   instagram:      elemelon
   # dribbble:       coletownsend
   disqus:         thecloverleaf-github-io-1
