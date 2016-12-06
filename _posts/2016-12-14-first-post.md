@@ -14,4 +14,3 @@ Responsiveness however, has still not been achieved. The graph tends to overflow
 {% include d3-charts/simple-bar.html %}
 
 ***
-

@@ -1,8 +1,0 @@
----
-layout: post-no-feature
-title: "WP: Title to be added"
-description: "Recent attempts at understanding the impact of an abolished monarchy system in Nepal." 
-comments: true
-post_author: "Arogya Koirala"
-incomplete: "The following article is under development, and is placed in this website for testing purposes only"
----
