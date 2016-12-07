@@ -68,9 +68,12 @@ div.tooltip {
 <div>
   <svg id="graph">
 </svg>
+</div >
+<div>
+  
 <svg id="desc">
 </svg>
-</div >
+</div>
 <script src="/assets/js/d3.v3.min.js"></script>
 <script src="/assets/js/jquery.min.js"></script>
 <script>
@@ -224,7 +227,7 @@ for (var j = 0, len = data.length; j < len; j++) {
   // Start drawing  
   var caption = desc.append("rect")
               .attr({ "height": height/3, "width":width,
-                     "x":margin, "y":margin,
+                     "x":margin, "y":margin+initialHeight,
                      "class":"box"
               });
 
