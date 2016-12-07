@@ -43,6 +43,9 @@ future:      true
 highlighter: pygments
 markdown:    kramdown
 
+gems:
+  - jekyll-seo-tag
+
 kramdown:
   auto_ids: true
   footnote_nr: 1
