@@ -132,15 +132,15 @@ var margin = 50; //space in pixels from edges of SVG
 var padding = 4; //space in pixels between circles
 
 var svgStyles = window.getComputedStyle(svg.node());
-var width = $("#graph").parent().width() - 2*margin;
-var height = 1.5*width - 2* margin;
+var width = $("#graph").parent().width();
+var height = 1.5*width ;
 // var height =  - 2*margin;
 
 
 
 chart = d3.select('#graph')
-      .attr("width", width)
-      .attr("height", height);
+      .attr("width", width - 2*margin)
+      .attr("height", height - 2* margin);
 d3.select(window)
   .on("resize", function() {
     var targetWidth = chart.node().getBoundingClientRect().width;
