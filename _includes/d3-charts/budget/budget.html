@@ -71,7 +71,7 @@ var div = d3.select("body").append("div")
 d3.csv("/assets/data/budget.csv", function(csv_data){
   
   // create empty array to hold graph data
-  var data=[]
+  var data=[];
   
   // push data from csv into an array
   for (var k = 1, len = csv_data.length; k < len; k++) {
@@ -99,11 +99,9 @@ d3.csv("/assets/data/budget.csv", function(csv_data){
          ? (Math.abs(Number(labelValue)) / 1.0e+3).toFixed(1) + "K"
 
          : Math.abs(Number(labelValue));
-
   };
   // Function to format percentage values
-  var PctFormat = function (labelValue) {
-      return (Number(labelValue) * 100) > 0 ? "+"+(Number(labelValue) * 100).toFixed(2) + "%" : (Number(labelValue) * 100).toFixed(2) + "%"
+  var PctFormat = function (labelValue) { return (Number(labelValue) * 100) > 0 ? "+"+(Number(labelValue) * 100).toFixed(2) + "%" : (Number(labelValue) * 100).toFixed(2) + "%"
   };  
   // Creating a color scale to color individual chart elements
   var colorScale = d3.scale.linear()
@@ -115,22 +113,7 @@ d3.csv("/assets/data/budget.csv", function(csv_data){
   var changeMin = d3.min(data, function(d){return d.pct_change;});     
   var changeMax = d3.max(data, function(d){return d.pct_change;});     
   var totalSize = d3.sum(data, function(d){return d.size;});
-    
-  setup();
-  render();
-
-  // responsiveness - needs to be worked upon      
-  d3.select(window)
-    .on("resize", function() {
-      var targetWidth = chart.node().getBoundingClientRect().width;
-      chart.attr("width", targetWidth);
-      chart.attr("height", targetWidth / aspect);
-    });
-
-
-  var setup = function() {
-
-
+ 
   //Set up SVG and rectangle//   
   var svg = d3.select("#graph");
   var digits = /(\d*)/;
@@ -150,6 +133,13 @@ d3.csv("/assets/data/budget.csv", function(csv_data){
         .attr("width", initialWidth)
         .attr("height", initialHeight);
   
+  // responsiveness - needs to be worked upon      
+  d3.select(window)
+    .on("resize", function() {
+      var targetWidth = chart.node().getBoundingClientRect().width;
+      chart.attr("width", targetWidth);
+      chart.attr("height", targetWidth / aspect);
+    });
 
   // calculating the usablearea where chart can be placed
   var usableArea = Math.PI*Math.pow( Math.min(width,height)/2 ,2)*0.667;
@@ -164,7 +154,7 @@ d3.csv("/assets/data/budget.csv", function(csv_data){
   //The initial value is based on scaling such that the total
   //area of the circles is 2/3 the area of the largest circle
   //you can draw within the box.
-      
+    
   /*
       console.log("Dimensions: ", [height, width]);
       console.log("area", width*height);
@@ -174,9 +164,6 @@ d3.csv("/assets/data/budget.csv", function(csv_data){
       console.log("RScale: ",rScale.domain(), rScale.range());
   console.log("r(1)", rScale(1) );
   //  */  
-  };
-  
-  var render = function() {
 
   // Start drawing  
   var box = svg.append("rect")
@@ -229,7 +216,7 @@ d3.csv("/assets/data/budget.csv", function(csv_data){
                 .style("left", (d3.event.pageX) + "px")   
                 .style("top", (d3.event.pageY - 28) + "px");  
             })          
-        .on("mouseout", function(d) {   
+         .on("mouseout", function(d) {   
             div.transition()    
                 .duration(500) 
                 .style("opacity", 0); 
@@ -314,12 +301,11 @@ d3.csv("/assets/data/budget.csv", function(csv_data){
                                     d.y + r);
         
     };
-  }  
+  };  
 
   function updateBubbles() {
       
-      bubbles
-          .each(collide(.2) ); //check for collisions   
+      bubbles.each( collide(.2) ); //check for collisions   
       
       //update the scale to squeeze in the box 
       //to match the current extent of the bubbles
@@ -354,15 +340,6 @@ d3.csv("/assets/data/budget.csv", function(csv_data){
 
   force.start();
 
-  svg.append("text")
-          .attr("x", ((width / 2)+25))             
-          .attr("y", 0 + (25))
-          .attr("text-anchor", "middle")  
-          .style("font-size", "12px") 
-          .style("text-decoration", "none")  
-          .text("Budget allocation across different services and functions (2016/2017)")
-
   });
 
-  };
 </script>
