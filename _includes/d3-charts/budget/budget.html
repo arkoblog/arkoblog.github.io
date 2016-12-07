@@ -48,10 +48,16 @@ div.tooltip {
 
 </style>
 
-<svg class="col-md-12" id="graph"></svg >
+<div class="col-md-12">
+  <svg id="graph" width="960" height="500"
+  viewBox="0 0 960 500"
+  preserveAspectRatio="xMidYMid meet">
+</svg>
+</div >
 <script src="/assets/js/d3.v3.min.js"></script>
 <script>
  
+
 //parameters//
 var N = 25; //number of nodes
 var sortOrder = -1; 
@@ -130,6 +136,15 @@ var svgStyles = window.getComputedStyle(svg.node());
 var width = parseInt(d3.select('#graph').style('width'), 10);
 // var height = parseFloat(svgStyles["height"]) - 2*margin;
 var height = width * 3 - 2*margin;
+
+var aspect = width / height,
+    chart = d3.select('#graph');
+d3.select(window)
+  .on("resize", function() {
+    var targetWidth = chart.node().getBoundingClientRect().width;
+    chart.attr("width", targetWidth);
+    chart.attr("height", targetWidth / aspect);
+  });
 
 console.log("mywidth:"+ width);
 console.log("height:"+ height);
