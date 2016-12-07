@@ -368,7 +368,7 @@ d3.csv("/assets/data/budget.csv", function(csv_data){
   function wrap(text, width) {
     text.each(function () {
         var text = d3.select(this),
-            words = "Foo is not a long word".split(/\s+/).reverse(),
+            words = text.split(/\s+/).reverse(),
             word,
             line = [],
             lineNumber = 0,
@@ -413,7 +413,7 @@ d3.csv("/assets/data/budget.csv", function(csv_data){
         .style("font-size", "0.6em") 
         .style("text-transform", "uppercase")  
         .text("The LARGER the circle, the greater is the contribution to overall budget.")
-        .call(wrap, initialWidth);;
+        .call(wrap,"The LARGER the circle, the greater is the contribution to overall budget." ,initialWidth);;
 
    });
 
