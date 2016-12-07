@@ -68,6 +68,8 @@ div.tooltip {
 <div>
   <svg id="graph">
 </svg>
+<svg id="desc">
+</svg>
 </div >
 <script src="/assets/js/d3.v3.min.js"></script>
 <script src="/assets/js/jquery.min.js"></script>
@@ -147,16 +149,23 @@ for (var j = 0, len = data.length; j < len; j++) {
                   .domain([changeMin,-0.00000000000001,0.00000000000001,1.5,5,25])
                   .range(["#ff0303","#ff7a7a","#c2ff99","#0dbf00","#007500", "#055400"]);
   
-  //Set up SVG and rectangle//   
+  //Set up SVG and rectangle// 
+
   var svg = d3.select("#graph");
+  var desc = d3.select("#desc");
+  
+
   var digits = /(\d*)/;
   var margin = 50;
   var margintop = 100 //space in pixels from edges of SVG
   var padding = 4; //space in pixels between circles
 
   graphPosition=$("#graph").parent().position();
-  leftPosition=graphPosition.left;
-  topPosition=graphPosition.top;
+  
+
+  descPosition=$("#desc").parent().position();
+  leftPosition=descPosition.left;
+  topPosition=descPosition.top;
   // console.log("Left:"+k.left);
   // console.log("K:"+JSON.stringify(k));
 
@@ -211,6 +220,14 @@ for (var j = 0, len = data.length; j < len; j++) {
                      "x":margin, "y":margin,
                      "class":"box"
               });
+
+  // Start drawing  
+  var caption = desc.append("rect")
+              .attr({ "height": height/3, "width":width,
+                     "x":margin, "y":margin,
+                     "class":"box"
+              });
+
 
   var bubbleGroup = svg.append("g")
           .attr("transform", 
