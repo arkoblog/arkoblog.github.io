@@ -1,8 +1,8 @@
 <style>
 rect.box {
     fill:none; 
-    stroke:royalblue;
-    stroke-width:3; 
+    stroke:#ccc;
+    stroke-width:1; 
     shape-rendering: crispEdges;
 
 }
@@ -154,7 +154,7 @@ d3.csv("/assets/data/budget.csv", function(csv_data){
 
   // chart height calculation
   var width = (initialWidth) -(2*margin);
-  var height = (initialHeight) -(2* margin)-100;
+  var height = (initialHeight) -(2* margin);
 
   // set width and height of chart
   chart = d3.select('#graph')
@@ -196,7 +196,7 @@ d3.csv("/assets/data/budget.csv", function(csv_data){
   // Start drawing  
   var box = svg.append("rect")
               .attr({ "height": height, "width":width,
-                     "x":margin, "y":margin+100,
+                     "x":margin, "y":margin,
                      "class":"box"
               });
 
