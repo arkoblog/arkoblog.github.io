@@ -1,6 +1,9 @@
 <!doctype html>
 <html lang="en" prefix="og: http://ogp.me/ns#">
 <meta charset="utf-8">
+
+<head>
+  
 <title>{% if page.title %}{{ page.title }} &#8211; {% endif %}{{ site.title }}</title>
 <meta name="description" content="{{ page.description }}">
 <meta name="keywords" content="{{ page.tags | join: ', ' }}">
@@ -41,6 +44,7 @@
 <!-- Icons -->
 <!-- 16x16 -->
 <link rel="shortcut icon" href="{{ site.url }}/favicon.ico">
+</head>
 
 <div id="bump">
   <body class="">
