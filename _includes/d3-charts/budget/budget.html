@@ -138,7 +138,8 @@ d3.csv("/assets/data/budget.csv", function(csv_data){
   //Set up SVG and rectangle//   
   var svg = d3.select("#graph");
   var digits = /(\d*)/;
-  var margin = 50; //space in pixels from edges of SVG
+  var margin = 50;
+  var margintop = 100 //space in pixels from edges of SVG
   var padding = 4; //space in pixels between circles
 
   graphPosition=$("#graph").parent().position();
@@ -153,7 +154,7 @@ d3.csv("/assets/data/budget.csv", function(csv_data){
 
   // chart height calculation
   var width = (initialWidth) -(2*margin);
-  var height = (initialHeight) -(2* margin);
+  var height = (initialHeight) -(2* margintop);
 
   // set width and height of chart
   chart = d3.select('#graph')
