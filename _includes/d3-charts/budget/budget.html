@@ -142,7 +142,7 @@ d3.csv("/assets/data/budget.csv", function(csv_data){
   var padding = 4; //space in pixels between circles
 
   k=$("#graph").parent().position()
-  console.log("Left:"+JSON.stringify(k[1]));
+  console.log("Left:"+JSON.stringify(k["left"]));
 
   // calculate width of parent div, this will be use to calculate chartDimensions
   var initialWidth = $("#graph").parent().width();
