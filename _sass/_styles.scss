@@ -103,11 +103,11 @@ hr {
     display: block;
     margin: 0 auto;
     width: 100%;
-    height: 4px;
+    height: 1px;
     background: $grey-light;
     border: none;
-    margin-bottom: $lh;
-    border-radius: 2px;
+    margin-bottom: 1px;
+    border-radius: 0px;
 }
 
 input {
