@@ -136,7 +136,7 @@ d3.csv("/assets/data/budget.csv", function(csv_data){
 sum = 0;
 for (var j = 0, len = data.length; j < len; j++) {
     console.log(sum);
-    if(data[i].ty != null){  
+    if(data[j].ty != null){  
     sum = sum + parseFloat(data[j].ty);
     }
 };
