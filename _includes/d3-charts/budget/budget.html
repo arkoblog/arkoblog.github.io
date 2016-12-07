@@ -37,7 +37,7 @@ div.tooltip {
     line-height: 1;
     padding: 12px;
     background: rgba(255, 255, 255, 0.5);
-    color: #000;
+    color: #888;
     border-radius: 2px;
 }
 
@@ -272,7 +272,7 @@ for (var j = 0, len = data.length; j < len; j++) {
                 .duration(200)    
                 .style("opacity", .9);    
             div .html("<span class='service'>"+ "Overall Budget: "+MoneyFormat(totalBudget)+"<br/> <br/>"+"<span class='service'>"+ d.id + " <br/> <hr/>" 
-                    +MoneyFormat(d.ty) +"("+sizeFormat(d.size)+")"+"</span><br/> <span class='change'>"
+                    +MoneyFormat(d.ty) +" ("+sizeFormat(d.size)+")"+"</span><br/> <span class='change'> <br/>"
                     + changeFormat(d.pct_change) +" as compared to last year " 
                     +"<br/> Last year's allocation: " + MoneyFormat(d.ly)+"</span>")   
                 .style("left", leftPosition + "px")   
