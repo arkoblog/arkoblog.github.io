@@ -2,8 +2,9 @@
 rect.box {
     fill:none; 
     stroke:royalblue;
-    stroke-width:0; 
+    stroke-width:3; 
     shape-rendering: crispEdges;
+
 }
 g.bubbles circle {
     fill:rgba(255,0,64,0.5); 
@@ -139,7 +140,6 @@ d3.csv("/assets/data/budget.csv", function(csv_data){
   var svg = d3.select("#graph");
   var digits = /(\d*)/;
   var margin = 50; //space in pixels from edges of SVG
-  var topmargin = 100;
   var padding = 4; //space in pixels between circles
 
   graphPosition=$("#graph").parent().position();
@@ -196,7 +196,7 @@ d3.csv("/assets/data/budget.csv", function(csv_data){
   // Start drawing  
   var box = svg.append("rect")
               .attr({ "height": height, "width":width,
-                     "x":margin, "y":margin+50,
+                     "x":margin, "y":margin,
                      "class":"box"
               });
 
