@@ -134,6 +134,8 @@ d3.csv("/assets/data/budget.csv", function(csv_data){
   totalBudget = data.reduce(function (s, a) {
         return s + a.ty;
     }, 0);
+
+  console.log("total-"+totalBudget);
  
   // Creating a color scale to color individual chart elements
   var colorScale = d3.scale.linear()
