@@ -91,7 +91,7 @@ d3.csv("/assets/data/budget.csv", function(csv_data){
   var data=[];
   
   // push data from csv into an array
-  for (var k = 1, len = csv_data.length; k < len; k++) {
+  for (var k = 0, len = csv_data.length; k < len; k++) {
     pct_of_total= +csv_data[k].pct_of_total;
     pct_change= +csv_data[k].pct_change;
     ty= +csv_data[k].ty;
