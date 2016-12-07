@@ -130,6 +130,7 @@ d3.csv("/assets/data/budget.csv", function(csv_data){
   var changeMax = d3.max(data, function(d){return d.pct_change;});     
   var totalSize = d3.sum(data, function(d){return d.size;});
 
+  console.log(JSON.stringify(data));
   // Calculate total budget
 var sum = 0;
 data.forEach(function(item){
