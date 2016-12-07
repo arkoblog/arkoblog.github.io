@@ -194,15 +194,7 @@ var bubbleGroup = svg.append("g")
         .attr("transform", 
               "translate(" + [margin,margin] + ")");
     
-svg.append("text")
-        .attr("x", (width / 2))             
-        .attr("y", 0 - (25))
-        .attr("text-anchor", "middle")  
-        .style("font-size", "12px") 
-        .style("text-decoration", "underline")  
-        .text("Budget allocation across different services and functions (2016/2017)")
-
-    //__Initialize layout objects__//
+   //__Initialize layout objects__//
 
 
 
@@ -370,6 +362,14 @@ function updateBubbles() {
 }
 
 force.start();
+
+svg.append("text")
+        .attr("x", (width / 2))             
+        .attr("y", 0 - (25))
+        .attr("text-anchor", "middle")  
+        .style("font-size", "12px") 
+        .style("text-decoration", "underline")  
+        .text("Budget allocation across different services and functions (2016/2017)")
 
 });
 
