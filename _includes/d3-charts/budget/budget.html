@@ -252,7 +252,7 @@ d3.csv("/assets/data/budget.csv", function(csv_data){
                 .duration(200) 
                 .style("opacity", 0.7); 
             d3.select(this).style("stroke", "black"); 
-            div .html("<span class='service'>"+ "Overall Budget : YYYB <br/> Hover on any circle to know more. <br/>")   
+            div .html("<span class='service'>"+ "Overall Budget : YYYB <br/><br/></span> <span class='change'> Hover on any circle to know more. <br/></span>")   
                 .style("left", leftPosition + "px")   
                 .style("top", topPosition + "px")   
         });
