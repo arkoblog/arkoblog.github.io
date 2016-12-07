@@ -145,8 +145,8 @@ var height = (initialheight*0.8) -(2* margin) ;
 
 
 chart = d3.select('#graph')
-      .attr("width", width)
-      .attr("height", height);
+      .attr("width", initialwidth)
+      .attr("height", initialheight);
 d3.select(window)
   .on("resize", function() {
     var targetWidth = chart.node().getBoundingClientRect().width;
