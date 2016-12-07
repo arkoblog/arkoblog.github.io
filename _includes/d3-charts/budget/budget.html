@@ -143,10 +143,10 @@ d3.csv("/assets/data/budget.csv", function(csv_data){
 
   // calculate width of parent div, this will be use to calculate chartDimensions
   var initialWidth = $("#graph").parent().width();
-  var initialHeight = initialWidth;
+  var initialHeight = initialWidth*1.5;
 
   // chart height calculation
-  var width = (initialWidth) -(2*margin);
+  var width = (initialWidth*.66) -(2*margin);
   var height = (initialHeight) -(2* margin);
 
   // set width and height of chart
