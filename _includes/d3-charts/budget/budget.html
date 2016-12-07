@@ -130,17 +130,17 @@ d3.csv("/assets/data/budget.csv", function(csv_data){
   var changeMax = d3.max(data, function(d){return d.pct_change;});     
   var totalSize = d3.sum(data, function(d){return d.size;});
 
-  console.log(JSON.stringify(data));
+  // console.log(JSON.stringify(data));
   // Calculate total budget
   
-sum = 0;
+totalBudget = 0;
 for (var j = 0, len = data.length; j < len; j++) {
     if(data[j].ty != null){  
-    sum = sum + parseFloat(data[j].ty);
-    console.log(j+":"+data[j].ty+":"+sum);
+    totalBudget = totalBudget + parseFloat(data[j].ty);
+    // console.log(j+":"+data[j].ty+":"+totalBudget);
     }
 };
-  console.log("total-"+sum);
+  console.log("total-"+totalBudget);
  
   // Creating a color scale to color individual chart elements
   var colorScale = d3.scale.linear()
