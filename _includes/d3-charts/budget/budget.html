@@ -48,7 +48,7 @@ div.tooltip {
 
 </style>
 
-<svg id="graph"></svg>
+<div class=col-md-12 id="graph"></div >
 <script src="/assets/js/d3.v3.min.js"></script>
 <script>
  
@@ -121,7 +121,7 @@ var totalSize = d3.sum(data, function(d){return d.size;});
     console.log(JSON.stringify(data));
 
 //Set up SVG and rectangle//   
-var svg = d3.select("svg");
+var svg = d3.select("#graph");
 var digits = /(\d*)/;
 var margin = 50; //space in pixels from edges of SVG
 var padding = 4; //space in pixels between circles
