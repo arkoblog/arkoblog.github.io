@@ -138,9 +138,8 @@ var height = 1.5*width - 2* margin;
 
 
 
-var aspect = width / height,
-    chart = d3.select('#graph');
-      .attr("width", width);
+chart = d3.select('#graph')
+      .attr("width", width)
       .attr("height", height);
 d3.select(window)
   .on("resize", function() {
