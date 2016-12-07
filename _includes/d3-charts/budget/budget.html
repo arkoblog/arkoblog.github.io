@@ -128,9 +128,10 @@ var padding = 4; //space in pixels between circles
 
 var svgStyles = window.getComputedStyle(svg.node());
 var width = parseInt(d3.select('#graph').style('width'), 10);
-var height = parseFloat(svgStyles["height"]) - 2*margin;
+// var height = parseFloat(svgStyles["height"]) - 2*margin;
+var height = width * 3 - 2*margin;
 
-console.log("mywidth:"+width);
+console.log("mywidth:"+ width);
 
 var usableArea = Math.PI*
     Math.pow( Math.min(width,height)/2 ,2)*0.667;
