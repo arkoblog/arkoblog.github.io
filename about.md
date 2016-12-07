@@ -11,7 +11,7 @@ My name is Arogya Koirala, and I am a data science enthusiast who is passionate 
 
 In my free time, I enjoy making music, studying maths and dabbling with technology. This blog, which is entirely hosted on github, is a result of my attempts at learning how to use Jekyll, a super fast static site generator. 
 
-I'm currently interested in learning about Nepal's information ecosystem, and eager to collaborate with Nepali individuals and/or organizations who are experimenting with using data and technology to help and support the Nepali community in any way possible. 
+I'm currently interested in learning about Nepal's information ecosystem, and eager to collaborate with individuals and/or organizations who are experimenting with using data and technology to help and support the Nepali community in any way possible. 
 
 ### Contact me
 
