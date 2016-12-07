@@ -69,10 +69,6 @@ div.tooltip {
   <svg id="graph">
 </svg>
 </div >
-<div>
-  <svg id="desc">
-</svg>
-</div>
 <script src="/assets/js/d3.v3.min.js"></script>
 <script src="/assets/js/jquery.min.js"></script>
 <script>
@@ -154,7 +150,6 @@ for (var j = 0, len = data.length; j < len; j++) {
   //Set up SVG and rectangle// 
 
   var svg = d3.select("#graph");
-  var desc = d3.select("#desc");
   
 
   var digits = /(\d*)/;
@@ -220,13 +215,6 @@ for (var j = 0, len = data.length; j < len; j++) {
   var box = svg.append("rect")
               .attr({ "height": height, "width":width,
                      "x":margin, "y":margin,
-                     "class":"box"
-              });
-
-  // Start drawing  
-  var caption = desc.append("rect")
-              .attr({ "height": height/3, "width":width,
-                     "x":margin, "y":margin+initialHeight,
                      "class":"box"
               });
 
