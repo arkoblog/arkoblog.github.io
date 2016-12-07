@@ -137,6 +137,8 @@ var width = parseInt(d3.select('#graph').style('width'), 10);
 var height = parseFloat(svgStyles["height"]) - 2*margin;
 // var height =  - 2*margin;
 
+
+
 var aspect = width / height,
     chart = d3.select('#graph');
 d3.select(window)
@@ -146,7 +148,12 @@ d3.select(window)
     chart.attr("height", targetWidth / aspect);
   });
 
-console.log("mywidth:"+ width);
+
+
+var xyz = $("#graph").parent().width();
+
+
+console.log("mywidth:"+ xyz);
 console.log("height:"+ height);
 
 var usableArea = Math.PI*
