@@ -368,16 +368,16 @@ d3.csv("/assets/data/budget.csv", function(csv_data){
         .attr("x", (10))             
         .attr("y", (initialHeight *.7))
         .attr("text-anchor", "left")  
-        .style("font-size", "2em") 
-        .style("text-decoration", "uppercase")  
+        .style("font-size", ".8em") 
+        .style("text-transform", "uppercase")  
         .text("How to Read this chart");
 
   svg.append("text")
         .attr("x", (10))             
         .attr("y", ((initialHeight *.7)+20))
         .attr("text-anchor", "left")  
-        .style("font-size", "2em") 
-        .style("text-decoration", "uppercase")  
+        .style("font-size", "0.6em") 
+        .style("text-transform", "uppercase")  
         .text("The LARGER the circle, the greater is the contribution to overall budget.");
 
    });
