@@ -42,6 +42,10 @@ div.tooltip {
     border-radius: 2px;
 }
 
+.service {
+      font: 18px sans-serif;  
+}
+
 #graph{
   border: 1px solid #ccc;
 }
@@ -212,7 +216,7 @@ d3.csv("/assets/data/budget.csv", function(csv_data){
             div.transition()    
                 .duration(200)    
                 .style("opacity", .9);    
-            div .html("Service: "+ d.id + "<br/>"+ "Allocated expenditure (2016/17): " + MoneyFormat(d.ty) +  "<br/>"+ "Allocated expenditure (2015/16): " + MoneyFormat(d.ly) + "<br/>"  + "Overall Change: " + PctFormat(d.pct_change))  
+            div .html("<span class='service'>"+ d.id + "</span><br/>"+ "Allocated expenditure (2016/17): " + MoneyFormat(d.ty) +  "<br/>"+ "Allocated expenditure (2015/16): " + MoneyFormat(d.ly) + "<br/>"  + "Overall Change: " + PctFormat(d.pct_change))  
                 .style("left", (d3.event.pageX) + "px")   
                 .style("top", (d3.event.pageY - 28) + "px");  
             })          
