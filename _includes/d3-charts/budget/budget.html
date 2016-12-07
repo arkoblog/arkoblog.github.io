@@ -111,8 +111,8 @@ d3.csv("/assets/data/budget.csv", function(csv_data){
  
   // Creating a color scale to color individual chart elements
   var colorScale = d3.scale.linear()
-                  .domain([changeMin,-0.00000000000001,0.00000000000001,5])
-                  .range(["#ff0303","#ffa3ba","#c2ff99","#0dbf00"]);
+                  .domain([changeMin,-0.00000000000001,0.00000000000001,1.5,5,25])
+                  .range(["#ff0303","#ffa3ba","#c2ff99","#0dbf00","#007500", "055400"]);
   
   //Set up SVG and rectangle//   
   var svg = d3.select("#graph");
