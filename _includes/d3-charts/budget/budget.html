@@ -103,17 +103,17 @@ d3.csv("/assets/data/budget.csv", function(csv_data){
   // Function to format percentage values
   var PctFormat = function (labelValue) { return (Number(labelValue) * 100) > 0 ? "+"+(Number(labelValue) * 100).toFixed(2) + "%" : (Number(labelValue) * 100).toFixed(2) + "%"
   };  
-  // Creating a color scale to color individual chart elements
-  var colorScale = d3.scale.linear()
-                  .domain([changeMin,-0.00000000000001,0.00000000000001,2])
-                  .range(["#ff0303","#ffa3ba","#c2ff99","#0dbf00"]);
-  
   // calculate necessary metrics    
   var dataMax = d3.max(data, function(d){return d.size;});    
   var changeMin = d3.min(data, function(d){return d.pct_change;});     
   var changeMax = d3.max(data, function(d){return d.pct_change;});     
   var totalSize = d3.sum(data, function(d){return d.size;});
  
+  // Creating a color scale to color individual chart elements
+  var colorScale = d3.scale.linear()
+                  .domain([changeMin,-0.00000000000001,0.00000000000001,2])
+                  .range(["#ff0303","#ffa3ba","#c2ff99","#0dbf00"]);
+  
   //Set up SVG and rectangle//   
   var svg = d3.select("#graph");
   var digits = /(\d*)/;
