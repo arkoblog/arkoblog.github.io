@@ -118,8 +118,12 @@ d3.csv("/assets/data/budget.csv", function(csv_data){
          : Math.abs(Number(labelValue));
   };
   // Function to format percentage values
-  var PctFormat = function (labelValue) { return (Number(labelValue) * 100) > 0 ? "+"+(Number(labelValue) * 100).toFixed(2) + "%" : (Number(labelValue) * 100).toFixed(2) + "%"
+  var changeFormat = function (labelValue) { return (Number(labelValue) * 100) > 0 ? "+"+(Number(labelValue) * 100).toFixed(2) + "%" : (Number(labelValue) * 100).toFixed(2) + "%"
   };  
+
+  var sizeFormat = function (labelValue) { return (Number(labelValue) * 100).toFixed(2) + "%" ;
+  };  
+
   // calculate necessary metrics    
   var dataMax = d3.max(data, function(d){return d.size;});    
   var changeMin = d3.min(data, function(d){return d.pct_change;});     
@@ -229,7 +233,7 @@ d3.csv("/assets/data/budget.csv", function(csv_data){
             div.transition()    
                 .duration(200)    
                 .style("opacity", .9);    
-            div .html("<span class='service'>"+ d.id +"</span><br/>"+ "<span class='change'>"+ PctFormat(d.pct_change) +" as compared to last year " +"</span><br/><br/> <span class='tooltip-header'>Allocated Expenditures:</span> <br/><hr/>"+ "This year (2016/17): " + MoneyFormat(d.ty) +  "<br/>"+ "Last year (2015/16): " + MoneyFormat(d.ly))   
+            div .html("<span class='service'>"+ d.id +"("+sizeFormat(d.size)+")"+"</span><br/>"+ "<span class='change'>"+ changeFormat(d.pct_change) +" as compared to last year " +"</span><br/><br/> <span class='tooltip-header'>Allocated Expenditures:</span> <br/><hr/>"+ "This year (2016/17): " + MoneyFormat(d.ty) +  "<br/>"+ "Last year (2015/16): " + MoneyFormat(d.ly))   
                 .style("left", (d3.event.pageX) + "px")   
                 .style("top", (d3.event.pageY - 28) + "px");  
             })          
