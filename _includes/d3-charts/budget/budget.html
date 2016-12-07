@@ -273,9 +273,10 @@ for (var j = 0, len = data.length; j < len; j++) {
                 .style("opacity", .9);    
             div .html("<span class='service'>"+ d.id + " <br/> <hr/>" 
                     +MoneyFormat(d.ty) +" This year ("+changeFormat(d.pct_change)+" from last year)"+"</span><br/> <span class='change'> <br/>"
-                    + sizeFormat(d.size) +" of total budget </span>" )  
+                    + sizeFormat(d.size) +" of total budget </span>" )
                 .style("left", leftPosition + "px")   
                 .style("top", topPosition+ "px");  
+                .call(wrap,20);  
             })          
          .on("mouseout", function(d) {   
             div.transition()    
