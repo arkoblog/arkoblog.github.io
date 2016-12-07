@@ -47,6 +47,7 @@ div.tooltip {
 }
 
 </style>
+
 <svg id="graph"></svg>
 <script src="/assets/js/d3.v3.min.js"></script>
 <script>
@@ -126,7 +127,7 @@ var margin = 50; //space in pixels from edges of SVG
 var padding = 4; //space in pixels between circles
 
 var svgStyles = window.getComputedStyle(svg.node());
-var width = parseFloat(svgStyles["width"]) - 2*margin;
+var width = parseInt(d3.select('#chart').style('width'), 10) - 2*margin;
 var height = parseFloat(svgStyles["height"]) - 2*margin;
 
 console.log("mywidth:"+width);
