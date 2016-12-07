@@ -272,9 +272,8 @@ for (var j = 0, len = data.length; j < len; j++) {
                 .duration(200)    
                 .style("opacity", .9);    
             div .html("<span class='service'>"+ "Overall Budget: "+MoneyFormat(totalBudget)+"<br/> <br/>"+"<span class='service'>"+ d.id + " <br/> <hr/>" 
-                    +MoneyFormat(d.ty) +" ("+sizeFormat(d.size)+")"+"</span><br/> <span class='change'> <br/>"
-                    + changeFormat(d.pct_change) +" as compared to last year " 
-                    +"<br/> Last year's allocation: " + MoneyFormat(d.ly)+"</span>")   
+                    +MoneyFormat(d.ty) +" This year ("+changeFormat(d.pct_change)+" from last year)"+"</span><br/> <span class='change'> <br/>"
+                    + sizeFormat(d.size) +" of total budget </span>" )  
                 .style("left", leftPosition + "px")   
                 .style("top", topPosition+ "px");  
             })          
