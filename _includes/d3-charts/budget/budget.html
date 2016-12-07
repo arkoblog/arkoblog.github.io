@@ -1,10 +1,9 @@
 <style>
 rect.box {
     fill:none; 
-    stroke:#ccc;
-    stroke-width:1; 
+    stroke:royalblue;
+    stroke-width:0; 
     shape-rendering: crispEdges;
-
 }
 g.bubbles circle {
     fill:rgba(255,0,64,0.5); 
@@ -245,16 +244,13 @@ d3.csv("/assets/data/budget.csv", function(csv_data){
                     + changeFormat(d.pct_change) +" as compared to last year " 
                     +"<br/> Last year's allocation: " + MoneyFormat(d.ly)+"</span>")   
                 .style("left", leftPosition + "px")   
-                .style("top", topPosition + "px");  
+                .style("top", topPosition+ "px");  
             })          
          .on("mouseout", function(d) {   
             div.transition()    
                 .duration(500) 
-                .style("opacity", 0.7); 
-            d3.select(this).style("stroke", "black"); 
-            div .html("<span class='service'>"+ "Overall Budget : YYYB")   
-                .style("left", leftPosition + "px")   
-                .style("top", topPosition + "px")  
+                .style("opacity", 0); 
+                d3.select(this).style("stroke", "black");   
         });
   
      
