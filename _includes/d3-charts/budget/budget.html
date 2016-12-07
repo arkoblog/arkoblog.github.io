@@ -133,13 +133,7 @@ var padding = 4; //space in pixels between circles
 
 var svgStyles = window.getComputedStyle(svg.node());
 
-svg.append("text")
-        .attr("x", (width / 2))             
-        .attr("y", 0 - (25))
-        .attr("text-anchor", "middle")  
-        .style("font-size", "12px") 
-        .style("text-decoration", "underline")  
-        .text("Budget allocation across different services and functions (2016/2017)")
+
 var initialwidth = $("#graph").parent().width();
 var initialheight = initialwidth;
 var width = (initialwidth) -(2*margin);
@@ -200,7 +194,17 @@ var bubbleGroup = svg.append("g")
         .attr("transform", 
               "translate(" + [margin,margin] + ")");
     
+svg.append("text")
+        .attr("x", (width / 2))             
+        .attr("y", 0 - (25))
+        .attr("text-anchor", "middle")  
+        .style("font-size", "12px") 
+        .style("text-decoration", "underline")  
+        .text("Budget allocation across different services and functions (2016/2017)")
+
     //__Initialize layout objects__//
+
+
 
 var colorScale = d3.scale.linear().domain([changeMin,-0.00000000000001,0.00000000000001,2]).range(["#ff0303","#ffa3ba","#c2ff99","#0dbf00"])
   
