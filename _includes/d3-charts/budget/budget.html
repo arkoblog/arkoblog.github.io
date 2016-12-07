@@ -141,6 +141,8 @@ d3.csv("/assets/data/budget.csv", function(csv_data){
   var margin = 50; //space in pixels from edges of SVG
   var padding = 4; //space in pixels between circles
 
+  console.log("Left:"+$("#graph").parent().position().left())
+
   // calculate width of parent div, this will be use to calculate chartDimensions
   var initialWidth = $("#graph").parent().width();
   var initialHeight = initialWidth;
