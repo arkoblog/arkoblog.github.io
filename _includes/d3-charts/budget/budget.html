@@ -43,9 +43,18 @@ div.tooltip {
 }
 
 </style>
-<svg width="400" height="600"></svg>
+<svg id="graph" width="400" height="600"></svg>
 <script src="/assets/js/d3.v3.min.js"></script>
 <script>
+function resize() {
+ /* Find the new window dimensions */
+var width = parseInt(d3.select("#graph").style("width")) - margin*2,
+height = parseInt(d3.select("#graph").style("height")) - margin*2;
+
+console.log("newwidth": width);
+console.log("newwidth": height)
+  /* Update graph using new width and height (code below) */
+}
 
 //parameters//
 var N = 25; //number of nodes
