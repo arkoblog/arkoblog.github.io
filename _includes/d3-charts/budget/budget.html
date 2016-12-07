@@ -49,8 +49,8 @@ div.tooltip {
 </style>
 
 <div class="col-md-12">
-  <svg id="graph" width="960" height="500"
-  viewBox="0 0 960 500"
+  <svg id="graph" width="680" height="500"
+  viewBox="0 0 680 500"
   preserveAspectRatio="xMidYMid meet">
 </svg>
 </div >
@@ -134,8 +134,8 @@ var padding = 4; //space in pixels between circles
 
 var svgStyles = window.getComputedStyle(svg.node());
 var width = parseInt(d3.select('#graph').style('width'), 10);
-// var height = parseFloat(svgStyles["height"]) - 2*margin;
-var height = width * 3 - 2*margin;
+var height = parseFloat(svgStyles["height"]) - 2*margin;
+// var height =  - 2*margin;
 
 var aspect = width / height,
     chart = d3.select('#graph');
