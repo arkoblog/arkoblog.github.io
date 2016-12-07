@@ -133,24 +133,20 @@ var padding = 4; //space in pixels between circles
 
 var svgStyles = window.getComputedStyle(svg.node());
 var width = $("#graph").parent().width();
-var height = 1.5*width ;
+var height = width ;
 // var height =  - 2*margin;
 
 
 
 chart = d3.select('#graph')
-      .attr("width", width - 2*margin)
-      .attr("height", height - 2* margin);
+      .attr("width", width*.8 - 2*margin)
+      .attr("height", height*.8 - 2* margin);
 d3.select(window)
   .on("resize", function() {
     var targetWidth = chart.node().getBoundingClientRect().width;
     chart.attr("width", targetWidth);
     chart.attr("height", targetWidth / aspect);
   });
-
-
-
-var xyz = $("#graph").parent().width();
 
 
 console.log("myparentwidth:"+ xyz);
