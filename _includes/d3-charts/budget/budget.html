@@ -131,10 +131,10 @@ d3.csv("/assets/data/budget.csv", function(csv_data){
   var totalSize = d3.sum(data, function(d){return d.size;});
 
   // Calculate total budget
-  var totalBudget == 0;
+  var totalBudget = 0;
     $.each(data, function(index, value) {
    totalBudget += value.ty;
- })
+ });
 
   console.log("total-"+totalBudget);
  
