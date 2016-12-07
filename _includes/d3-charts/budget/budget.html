@@ -141,9 +141,11 @@ d3.csv("/assets/data/budget.csv", function(csv_data){
   var margin = 50; //space in pixels from edges of SVG
   var padding = 4; //space in pixels between circles
 
-  k=$("#graph").parent().position()
-  console.log("Left:"+k.left);
-  console.log("K:"+JSON.stringify(k));
+  graphPosition=$("#graph").parent().position();
+  leftPosition=graphPosition.left;
+  topPosition=graphPosition.top;
+  // console.log("Left:"+k.left);
+  // console.log("K:"+JSON.stringify(k));
 
   // calculate width of parent div, this will be use to calculate chartDimensions
   var initialWidth = $("#graph").parent().width();
@@ -241,8 +243,8 @@ d3.csv("/assets/data/budget.csv", function(csv_data){
                     +MoneyFormat(d.ty) +"("+sizeFormat(d.size)+")"+"</span><br/> <span class='change'>"
                     + changeFormat(d.pct_change) +" as compared to last year " 
                     +"<br/> Last year's allocation: " + MoneyFormat(d.ly)+"</span>")   
-                .style("left", 110 + "px")   
-                .style("top", (110) + "px");  
+                .style("left", leftPosition + "px")   
+                .style("top", topPosition + "px");  
             })          
          .on("mouseout", function(d) {   
             div.transition()    
