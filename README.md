@@ -5,7 +5,7 @@ Thank you for visiting the arkoblog repository. This repo contains all of the co
 
 A few extra features that  have added, and that is worth mentioning include:
 - Support for jquery and d3. 
-- Integration of responsive charts based on d3, and a comments engine hosted through discuss.
+- Integration of responsive charts based on d3, and a comments engine hosted through Disqus.
 - I'm currently in the process of adding more d3 based visualizations. 
 
 Work for the future:
