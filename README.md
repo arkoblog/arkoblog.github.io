@@ -1,6 +1,6 @@
 # Welcome to Arkoblog
 
-Thank you for visiting the arkoblog repository. This repo contains all of the code used in the development of [my blog](http://arkoblog.github.io). The blog has been developed with Jekyll, and uses the Balazac theme, which is inspired from [minimal mistakes](http://mademistakes.com).
+Thank you for visiting the arkoblog repository. This repo contains all of the code used in the development of [my blog](http://arkoblog.github.io). The blog has been developed with Jekyll, and uses the [Balzac](http://jekyll.gtat.me/) theme 
 
 A few extra features that  have added, and that is worth mentioning include:
 - Support for jquery and d3. 
