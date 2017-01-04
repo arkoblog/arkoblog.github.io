@@ -16,7 +16,10 @@ If you would like to learn more about geospatial analysis and visualization usin
 * [Leaflet for R](https://rstudio.github.io/leaflet/): The official website has some excellent refernces for the Leaflet R library.
 * [This playlist for R shiny](https://www.youtube.com/playlist?list=PL6wLL_RojB5xNOhe2OTSd-DPkMLVY9DfB) is all you need to get started with the library.
 
-By the end of the week, I had managed to not only play with geospatial data, but also manage to use a combination of libraries (Shiny, Leaflet in R) and creeate a small tool that visualizes schools in Dhading, Nepal.
+By the end of the week, I had managed to not only play with geospatial data, but also manage to use a combination of libraries (Shiny, Leaflet in R) and creeate a small tool that visualizes schools in Dhading, Nepal. Here's what it looks like:
+
+<img src="https://cloud.githubusercontent.com/assets/24402285/21640745/555bfbee-d29f-11e6-9b74-c8ae66e63620.PNG"></img>
+
 
 [Click here](https://arkoblog.shinyapps.io/app_dhading_survey/) to load the application I made!
 
