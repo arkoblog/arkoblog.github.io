@@ -1,6 +1,7 @@
 ---
 layout: post-no-feature
 title: "Of maps, apps and geospatial analysis!"
+author: "Arogya Koirala"
 date: "24 Dec, 2016"
 description: "Developing an application that helps us understand the condition of schools in Dhading"
 category: articles
