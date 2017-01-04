@@ -1,29 +1,40 @@
 ---
 layout: post-no-feature
-title: "Of apps with maps!"
+title: "Of maps, apps and geospatial analysis!"
 date: "24 Dec, 2016"
-description: "Starting anew in Kathmandu Living Labs"
+description: "Developing an application that helps us understand the condition of schools in Dhading"
 category: articles
+comments: true
 tags: [sample post, readability, test]
 ---
-My first week in KLL was one full of learning. It started off with a simple assignment I recieved from Nirab dai, where I had to visualise geospatial data using some framework. 
 
-I quickly agreed on the task , even though I knew nothing about geospatial data, or visualizing maps for that matter. However, over the next few days, I was able to quicly learn about how to play with geospatial data in R. Although it was in most part similar to how one goes about handling regular data, one aspect that was interesting was how one could aggregate by geographic polygons. So cool!
+Our team at Kathmandu Living Labs thought it'd be interesting to dig deeper into the data collected during the ["Structural Integrity and Damage Assessment"](http://www.kathmandulivinglabs.org/projects/structural-integrity-and-damage-assessment) project. The focus of this small exercise was to identify how we could leverage the data collected to generate actionable insights around the educational infrastructure of Dhading. 
 
-If you would like to learn more about geospatial analysis and visualization using R, here are two of my favorite links:
+I was particularly excited, for many reasons, which include:
+
+* I couldn't believe that I was getting to work with data that was relevant to my own community. 
+* Playing with geospatial data was completely alien to me, I had visualized geographic data before but barely understood how I did it. This was my chance at re-learning old concepts.
+* I always wanted to try my hands at building a web application using R Shiny, and this was an excellent opportunity to do so.
+
+Over the course of the week, we managed to build and deploy a small R Shiny app that, surprisingly, provided us with a wealth of information. Even though we had barely scratched the surface of the large dataset, we were quickly able to learn about a lot of things, that include:
+
+* How are schools distributed by eleveation around Dhading? 
+* What are some schools in high/low elevation zones?
+* What about students? How many students (also what proportion of students) in Dhading attend schools that are above 1500m?
+* How many schools are more than 3kms away from the nearest road?
+* ....and much more.
+
+[The app is currently hosted in Shinyapps.io, click here to visit the app and play with it yourself!](https://arkoblog.shinyapps.io/app_dhading_survey/) 
+
+Here is a screenshot of the app (unfortunately, it doesn't work with Google chrome)
+
+<img src="https://cloud.githubusercontent.com/assets/24402285/21640745/555bfbee-d29f-11e6-9b74-c8ae66e63620.PNg"/>
+
+### Resources: 
+If you would like to learn more about geospatial analysis and visualization using R, here are some links that were of great help during this project:
 
 * [Introduction to Visualizing Spatial Data in R](https://cran.r-project.org/doc/contrib/intro-spatial-rl.pdf): An excellent resource to learn abouyt spatial data frames, manipulation techniques, and some interesting visualization libraries.
 * [Leaflet for R](https://rstudio.github.io/leaflet/): The official website has some excellent refernces for the Leaflet R library.
 * [This playlist for R shiny](https://www.youtube.com/playlist?list=PL6wLL_RojB5xNOhe2OTSd-DPkMLVY9DfB) is all you need to get started with the library.
 
-By the end of the week, I had managed to not only play with geospatial data, but also manage to use a combination of libraries (Shiny, Leaflet in R) and creeate a small tool that visualizes schools in Dhading, Nepal. Here's what it looks like:
-
-<img src="https://cloud.githubusercontent.com/assets/24402285/21640745/555bfbee-d29f-11e6-9b74-c8ae66e63620.PNG"></img>
-
-
-[Click here](https://arkoblog.shinyapps.io/app_dhading_survey/) to load the application I made!
-
-Unfortunately, it's only firefox friendly at the moment, and doesn't work on Chrome.
-
-Peace,
-Arogya
+Happy playing! If you uncover any interesting insights, feel free to let me know by commenting below.
