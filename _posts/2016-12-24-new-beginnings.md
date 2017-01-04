@@ -28,7 +28,7 @@ Over the course of the week, we managed to build and deploy a small R Shiny app 
 
 Here is a screenshot of the app (unfortunately, it doesn't work with Google chrome)
 
-<img src="https://cloud.githubusercontent.com/assets/24402285/21640745/555bfbee-d29f-11e6-9b74-c8ae66e63620.PNg"/>
+<img src="https://cloud.githubusercontent.com/assets/24402285/21640745/555bfbee-d29f-11e6-9b74-c8ae66e63620.PNG"/>
 
 ### Resources: 
 If you would like to learn more about geospatial analysis and visualization using R, here are some links that were of great help during this project:
