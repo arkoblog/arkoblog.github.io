@@ -4,7 +4,7 @@ permalink: /about/index.html
 description: "Thank you for visiting my website." 
 tags: [about, Jekyll, theme, responsive]
 image: 
-        feature: about.png
+        feature: profile.jpg
 ---
 
 My name is Arogya, and I am currently the Tech and Innovation Lead at [Kathmandu Living Labs](http://kathmandulivinglabs.org/team) (KLL). 
