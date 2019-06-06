@@ -1,7 +1,7 @@
 ---
 layout: post-light-feature
 title: Integrating d3 with Jekyll
-description: "A sample page which includes a d3.js based graph has been implemented. However, responsiveness still seems to be an issue."
+description: "Attempting to include a d3.js based graph in a Jekyll post."
 categories: articles
 image: 
         feature: soft-trees.jpg
