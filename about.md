@@ -10,7 +10,7 @@ image:
 My name is Arogya, and I am currently the Tech and Innovation Lead at [Kathmandu Living Labs](http://kathmandulivinglabs.org/team) (KLL). 
 
 At KLL, I have worked on projects including the [2015 Nepal Earthquake Data Portal](eq2015.npc.gov.np), the [Open Local Governance
-Portal](http://neelakantha.klldev.org) for Neelakantha Municipality in Dhading District, the (Jaibik Map project)[http://jaibikmapv2.klldev.org/], and [Sajha Sabha](sajhasabha.org)--a toolbox of mobile and
+Portal](http://neelakantha.klldev.org) for Neelakantha Municipality in Dhading District, the [Jaibik Map](http://jaibikmapv2.klldev.org/) project, and [Sajha Sabha](sajhasabha.org)--a toolbox of mobile and
 web apps enabling citizens, civil society organizations, and media to submit, document and share local concerns with the
 authorities and to track and share progress of efforts to solve the issues. These projects involve the collection, analysis and
 dissemination of large amounts of data used to help policymakers, implementers and average citizens contribute to the
