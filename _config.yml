@@ -1,16 +1,15 @@
-title:            ARKOBLOG
-tagline:          A somewhat opinionated blog that rests at the intersection of data, technology and society.
-description:      A somewhat opinionated blog that rests at the intersection of data, technology and society.
-canonical: http://arkoblog.github.io
+title:            koiralaa
+tagline:          Experiments at the intersection of data, technology and society.
+description:      
+canonical: http://arogyakoirala.github.io
 
 # Owner/author information
 owner:
   name:           Arogya Koirala
   avatar:         https://arkoeutablog.files.wordpress.com/2016/10/tcl_med_wht2.png?w=128
-  bio:            "Aesthete & Athlete"
   email:          arogyakoirala@gmail.com
-  twitter:        elemelon
-  github:         arkoblog
+  twitter:        koiralaaa
+  github:         arogyakoirala
   instagram:      elemelon
   # dribbble:       coletownsend
   disqus:         thecloverleaf-github-io-1
@@ -38,7 +37,7 @@ links:
 #    external: true
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-timezone:    America/New_York
+timezone:    Nepal/Kathmandu
 future:      true
 highlighter: pygments
 markdown:    kramdown
