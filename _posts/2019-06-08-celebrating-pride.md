@@ -4,7 +4,7 @@ title: Celebrating Pride
 description: "Capital Pride is an annual LGBT pride festival held in the month of June every year, here in Washington DC." 
 tags: [LGBT, Pride Fest, StateIVLP, ]
 image: 
-        feature: profile.jpg
+        feature: happypride.jpg
 ---
 
 What started out as a gathering of around 2000 people for a one-day block party has grown to a city-wide month long celebration of the rights of the LGBT community, drawing nearly 100,000 to 150,000 people these days.
