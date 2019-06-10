@@ -13,7 +13,7 @@ I was amazed to see how the DC community has taken steps to make it part of thei
 
 Such a stark contrast from things back home in Nepal. While it may be true that our country has been [considered "very progressive"](https://en.wikipedia.org/wiki/LGBT_rights_in_Nepal) with respect to the rights of the LGBT community in Asia, much work is still needed, especially when it comes creating a positive, normal social environment for our friends trying to live normal lives there.
 
-Sharing some images that I took on walk down 14th street.
+Sharing some images that I took on my walk down 14th street in DC yesterday.
 
 <iframe src="https://albumizr.com/a/WhqA" scrolling="no" frameborder="0" allowfullscreen width="700" height="400" style="margin-bottom:20px"></iframe>
 
