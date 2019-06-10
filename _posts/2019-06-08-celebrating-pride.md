@@ -1,6 +1,6 @@
 ---
 layout: post-light-feature
-title: IVLP Reflections: Celebrating Pride
+title: Celebrating Pride
 description: "Capital Pride is an annual LGBT pride festival held in the month of June every year, here in Washington DC." 
 tags: [LGBT, Pride Fest, StateIVLP, ]
 image: 
@@ -13,6 +13,9 @@ I was amazed to see how the DC community has taken steps to make it part of thei
 
 Such a stark contrast from things back home in Nepal. While it may be true that our country has been considered "very progressive" with respect to the rights of the LGBT community in Asia, much work is still needed, especially when it comes creating a positive, normal social environment for friends back home.
 
+Sharing some images that I took on walk down 14th street.
+
+<iframe src="https://albumizr.com/a/WhqA" scrolling="no" frameborder="0" allowfullscreen width="700" height="400"></iframe>
 
 
 
